@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.javafxtest.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<GridPane fx:controller="org.example.javafxtest.CalculatorController"
+          alignment="CENTER" hgap="10" vgap="10"
+          xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8.0.171">
+
+        <TextField fx:id="display" editable="false" GridPane.columnSpan="4" maxHeight="400"/>
+        <Button text="7" onAction="#onNumberButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Button text="8" onAction="#onNumberButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Button text="9" onAction="#onNumberButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+        <Button text="/" onAction="#onOperatorButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+        <Button text="4" onAction="#onNumberButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <Button text="5" onAction="#onNumberButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Button text="6" onAction="#onNumberButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+        <Button text="*" onAction="#onOperatorButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+        <Button text="1" onAction="#onNumberButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Button text="2" onAction="#onNumberButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        <Button text="3" onAction="#onNumberButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+        <Button text="-" onAction="#onOperatorButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+        <Button text="0" onAction="#onNumberButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <Button text="C" onAction="#onClearButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        <Button text="=" onAction="#onEqualsButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+        <Button text="+" onAction="#onOperatorButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+</GridPane>
