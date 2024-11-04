@@ -5,7 +5,10 @@
 
 <GridPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.javafxtest.navControllers.NavigationController">
+            fx:controller="org.example.javafxtest.navControllers.NavigationController"
+            stylesheets="@../Styles/navMenu.css"
+>
 
-    <Button text="&lt;-- Menu" onAction="#switchToMenu" GridPane.columnSpan="2"/>
+
+    <Button fx:id="SwitchToMenu" text="&lt;-- Menu" onAction="#switchToMenu" GridPane.columnSpan="2"/>
 </GridPane>

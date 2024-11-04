@@ -1,0 +1,7 @@
+.SwitchToMenu{
+    -fx-font-size: 10pt;
+    -fx-background-color: black;
+}
+.root {
+    -fx-background-color: #000000;
+}
