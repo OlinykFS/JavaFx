@@ -9,29 +9,35 @@ import java.io.IOException;
 public class SceneRouter {
     private static SceneRouter instance;
     private Stage primaryStage;
-    private SceneRouter() {
 
-    }
-    private static SceneRouter getInstance(){
-        if(instance == null){
+    private SceneRouter() {}
+
+    public static SceneRouter getInstance() {
+        if (instance == null) {
             instance = new SceneRouter();
         }
         return instance;
     }
 
-    public void SetPrimaryStage(Stage stage){
+    public void setPrimaryStage(Stage stage) {
         this.primaryStage = stage;
     }
-    public void SwitchToMenu(){
-        switchScene("Views/Menu-View.fxml", "Menu");
+
+    public void switchToMenu() {
+        switchScene("/org/example/javafxtest/Views/Menu-View.fxml", "Menu");
     }
-    public void SwitchToCalculator(){
-        switchScene("Views/Calculator-View.fxml", "Calculator");
+
+    public void switchToCalculator() {
+        switchScene("/org/example/javafxtest/Views/Calculator-View.fxml", "Calculator");
     }
-    private void switchScene(String fxmlPath, String title){
+    public void switchToDice(){
+        switchScene("/org/example/javafxtest/Views/Dice-View.fxml", "Dice");
+    }
+
+    private void switchScene(String fxmlPath, String title) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlPath));
-            Scene scene = new Scene(fxmlLoader.load(), 400,500);
+            Scene scene = new Scene(fxmlLoader.load(), 400, 500);
             primaryStage.setScene(scene);
             primaryStage.setTitle(title);
             primaryStage.show();
