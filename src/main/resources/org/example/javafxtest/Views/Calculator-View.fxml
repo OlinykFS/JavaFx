@@ -10,22 +10,11 @@
 >
 
         <TextField fx:id="display"  styleClass="display" editable="false" GridPane.columnSpan="4" maxHeight="400"/>
-        <Button text="7" onAction="#onNumberButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-        <Button text="8" onAction="#onNumberButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
-        <Button text="9" onAction="#onNumberButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
-        <Button text="/" onAction="#onOperatorButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
-        <Button text="4" onAction="#onNumberButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-        <Button text="5" onAction="#onNumberButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
-        <Button text="6" onAction="#onNumberButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
-        <Button text="*" onAction="#onOperatorButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
-        <Button text="1" onAction="#onNumberButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
-        <Button text="2" onAction="#onNumberButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
-        <Button text="3" onAction="#onNumberButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
-        <Button text="-" onAction="#onOperatorButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
-        <Button text="0" onAction="#onNumberButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
-        <Button text="C" onAction="#onClearButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
-        <Button text="=" onAction="#onEqualsButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
-        <Button text="+" onAction="#onOperatorButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+        <Button text="C" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="secondary-button"/>
+        <Button text="±" GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="secondary-button"/>
+
+        <Button text="\%" GridPane.rowIndex="0" GridPane.columnIndex="2" styleClass="secondary-button"/>
+        <Button text="÷" GridPane.rowIndex="0" GridPane.columnIndex="3" styleClass="special-button"/>
 
         <fx:include source="navMenu.fxml" GridPane.rowIndex="5" GridPane.columnSpan="4"/>
 
