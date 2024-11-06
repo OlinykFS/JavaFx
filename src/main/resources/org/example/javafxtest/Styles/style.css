@@ -1,21 +1,45 @@
 .button {
-    -fx-background-color: #FE9E0A;
-    -fx-text-fill: #FCFCFC;
-    -fx-font-size: 16px;
-    -fx-border-radius: 100;
-    -fx-background-radius: 100;
-    -fx-padding: 10 20 10 20;
+    -fx-font-size: 36px;
+    -fx-font-weight: 600;
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+    -fx-padding: 15 15 15 15;
+    -fx-max-height: 80px;
 }
-.root{
-    -fx-background-color: #343434;
+
+.root {
+    -fx-background-color: #000000;
     -fx-font-family: "SF Pro Text";
-    -fx-font-size: 16pt;
-    -fx-font-weight: bold;
+    -fx-font-weight: 600;
 }
 .display {
-    -fx-background-color: #333333;
-    -fx-text-fill: #FBFBFB;
-    -fx-font-size: 20px;
     -fx-padding: 10;
+    -fx-pref-width: 100%;
+    -fx-text-alignment: right;
+    -fx-background-color: transparent;
+    -fx-font-size: 32px;
+    -fx-text-fill: #ffffff;
+}
+
+.secondary-button{
+    -fx-text-fill: #040404;
+    -fx-background-color:#A5A5A5;
+}
+.special-button{
+    -fx-text-fill:#FEF7F4 ;
+    -fx-background-color: #FF9F0A;
+}
+.number-button{
+    -fx-text-fill: #FCFCFC;
+    -fx-background-color: #343434;
+}
+.secondary-button:hover {
+    -fx-background-color: #B0B0B0;
+}
+.special-button:pressed {
+    -fx-background-color: #E68A00;
+}
+.number-button:pressed {
+    -fx-background-color: #505050;
 }
 

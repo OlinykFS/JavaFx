@@ -8,7 +8,13 @@ import javafx.scene.control.TextField;
 public class CalculatorController {
     @FXML
     private TextField display;
+    @FXML
+    private Button multiplyButton;
 
+    @FXML
+    public void initialize() {
+        multiplyButton.setText("×");
+    }
     private double firstOperand = 0;
     private String Operator = "";
     private boolean startNewNumber = true;
