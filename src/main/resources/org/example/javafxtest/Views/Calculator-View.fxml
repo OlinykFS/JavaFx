@@ -30,9 +30,10 @@
         <Button text="3" onAction="#onNumberButtonClick" prefWidth="80" prefHeight="80" GridPane.rowIndex="4" GridPane.columnIndex="2" styleClass="number-button"/>
         <Button text="+" prefWidth="80" prefHeight="80" GridPane.rowIndex="4" GridPane.columnIndex="3" styleClass="special-button"/>
 
-        <Button text="0"  onAction="#onNumberButtonClick" GridPane.rowIndex="5" GridPane.columnSpan="2" styleClass="number-button" />
+        <Button text="0" onAction="#onNumberButtonClick" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="number-button" prefWidth="170"/>
         <Button text="," onAction="#onNumberButtonClick" prefWidth="80" prefHeight="80" GridPane.rowIndex="5" GridPane.columnIndex="2" styleClass="number-button" />
 
-        <fx:include source="navMenu.fxml" GridPane.rowIndex="7" GridPane.columnSpan="4"/>
+        <Button text="=" onAction="#onEqualsButtonClick" prefWidth="80" prefHeight="80" GridPane.rowIndex="5" GridPane.columnIndex="3" styleClass="special-button"/>
 
+        <fx:include source="navMenu.fxml" GridPane.rowIndex="7" GridPane.columnIndex="0" prefWidth="80" prefHeight="80" />
 </GridPane>

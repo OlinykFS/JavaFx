@@ -14,10 +14,11 @@
 }
 .display {
     -fx-padding: 10;
+    -fx-alignment: CENTER_RIGHT;
     -fx-pref-width: 100%;
-    -fx-text-alignment: right;
     -fx-background-color: transparent;
     -fx-font-size: 32px;
+    -fx-min-height: 100px;
     -fx-text-fill: #ffffff;
 }
 
