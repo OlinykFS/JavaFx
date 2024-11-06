@@ -52,13 +52,13 @@ public class CalculatorController {
             case "+":
                 result = firstOperand + SecondOperand;
                 break;
-            case "-":
+            case "—":
                 result = firstOperand - SecondOperand;
                 break;
-            case "*":
+            case "×":
                 result = firstOperand * SecondOperand;
                 break;
-            case "/":
+            case "÷":
                 if(SecondOperand == 0){
                     display.setText("shodi na nol nelzia");
                     return;
